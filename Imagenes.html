@@ -1,0 +1,69 @@
+<!--
+            Mapas de Bits
+            - bmp: bitmaps
+            - jpg: Cluster de puntos que son silimalres o cercanos. (Mas usados en la web)
+            - gif: 
+            - png: uno de los mas utilizados, permite colocar imagenes con transparencia. 
+            - webp: Se maneja toda la informacion, siempre se comprime pero no pierde calidad de imagen. 
+
+            ------------------------------------
+            gimp
+            photoshop
+            adobe ilustrator
+        Vectoriales
+            svg: Escalable vector graphics
+            -----------------------------------
+            inskape:
+            Corel draw:
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <h1>Imagenes en HTML</h1>
+        <img src="https://placehold.co/1024X640" alt="Logo de perfil">
+        <picture>
+            <source srcset="https://placehold.co/380x380" 
+            media="(max-width:719px)">
+            <source srcset="https://placehold.co/780x480" 
+            media="(max-width:1023)">
+            <img src="https://placehold.co/1024X720"  
+            alt="Imagen responsive">
+        </picture>
+
+        <picture>
+            <source srcset="https://placehold.co/1024X720/orange/000"  
+            media="(min-width:1024px)">
+            <source srcset="https://placehold.co/780x480/orange/000" 
+            media="(min-width:720)">
+            <img src="https://placehold.co/380x380/orange/000" 
+            alt="Imagen responsive">
+        </picture>
+
+        <figure>
+            <picture>
+                <source srcset="https://placehold.co/1024X720/red/000"  
+                media="(min-width:1024px)">
+                <source srcset="https://placehold.co/780x480/red/000" 
+                media="(min-width:720)">
+                <img src="https://placehold.co/380x380/red/000" 
+                alt="Imagen responsive">
+            </picture>
+            <figcaption>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi neque illum magni odio, alias nobis?
+            </figcaption>
+        </figure>
+        <img src="img/droplet-svgrepo-com.svg" alt="imagen vectorial">
+
+        <br>
+        <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19 13.8C19 17.7764 15.866 21 12 21C8.13401 21 5 17.7764 5 13.8C5 12.8452 5.18069 11.9338 5.50883 11.1C6.54726 8.46135 12 3 12 3C12 3 17.4527 8.46135 18.4912 11.1C18.8193 11.9338 19 12.8452 19 13.8Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+             
+    </body>
+</html>
