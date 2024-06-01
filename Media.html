@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Media</h1>
+    <!-- 
+        Controls es para que los videos tengan las opciones de pausa, volumen, etc. 
+    -->
+    <video controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        <source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+    </video>
+
+    <!-- 
+        Controls: Mostrar el audio
+        autoplay: Se reproduce de un solo al abrir la página
+        loop: se repite el audio
+    -->
+    <h2>Audio</h2>
+    <audio controls>
+        <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+        <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg">
+    </audio>
+
+    <h2>Formularios</h2>
+    <!--
+        Action: A donde se va a enviar la peticion que captura el formulario
+        Get: Solicitar una peticion
+        Method: Como se va a serializar la informacion
+    -->
+    <form action="Media.html" method="get">
+        <label for="txtNombre">Nombre:</label>
+        <!--
+            El atributo name del input define el nombre de la variable
+            El atributo type es lo que va a capturar el input
+            El atributo placeholder es para que el input no este vacio/blanco, definimos algo para que se vea trasparente
+            El atributo id redirige 
+        -->
+        <input required id="txtNombre" type="text" placeholder="Nombre completo">
+        <br>
+        <label for="txtEmail">Correo:</label>
+        <input required id="txtEmail" name="email" type="email" placeholder="Tucorreo@electri.ico">
+        <br>
+        <label for="txtContra">Contraseña:</label>
+        <input type="password" name="Contraseña" id="txtContra" title="8 letras, 1 Mayuscula, 1 Numero y un Caracter Especial" 
+        pattern="^.*(?=.{8,})(?=.*[a-zA-Z])(?=.*\d)(?=.*[!#$%&? ]).*$">
+        
+        <br>
+        <label>Tema</label>
+            <div>
+                <input name="opcTema" value="Dark" id="OpcDark" type="radio">
+                <label for="OpcDark">Tema Negro</label>
+                <input name="opcTema" value="Light" id="OpcLight" type="radio">
+                <label for="OpcLight">Tema Blanco</label>
+                <input name="opcTema" value="Usar el mismo del SO" id="Opcos" type="radio" checked>
+                <label for="Opcos">Tema del SO</label>
+            </div>
+        
+        <!-- 
+            fieldset: Es un contenedor de opcines multiples
+            legend: Es el nombre del combobox
+        -->
+        <fieldset>
+            <legend>Opciones</legend>
+            <label for="CompartirAmg">Compartir con amigos</label>
+            <input type="checkbox" value="1" name="ShareWithFriends">
+            <br>
+            <label for="CompartirTdo">Compartir con Todos</label>
+            <input type="checkbox" value="1" name="ShareWithFriends">
+            <br>
+            <label for="CompartirACL">Compartir con Lista de acceso</label>
+            <input type="checkbox" value="1" name="ShareWithFriends">
+        </fieldset>
+        <label for="cmbCiudad">Ciudad</label>
+            <select name="Ciudad" id="cmbCiudad">
+                <option value="1">Tegucigalpa</option>
+                <option value="2">Danli</option>
+                <option value="3">San Pedro Sula</option>
+                <option value="4">Choluteca</option>
+                <option value="5">Juticalpa</option>
+                <option value="6">Santa Rosa De Copan</option>
+                <option value="7" selected>Siguatepeque</option>
+                <option value="8">La Ceiba</option>
+                <option value="9">Olanchito</option>
+                <option value="15">Trujillo</option>
+            </select>
+            <br>
+            <label for="txtBlog">Entrada Blog:</label><br>
+            <textarea name="Blog" id="txtBlog" placeholder="Escribir un blog" cols="80" rows="8"></textarea> <br>
+
+        <button name="btnEnviar" type="submit">Enviar</button>
+        <button name="btnLimpiar" type="submit">Limpiar</button>
+        <button name="btnBorrar" type="submit">Borrar</button>
+    </form>
+</body>
+</html>
