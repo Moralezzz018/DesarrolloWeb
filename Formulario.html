@@ -17,15 +17,15 @@
             <label for="txtNombre">Nombre:</label>
             <input required id="txtNombre" type="text" placeholder="Nombre completo"> <br>
             <label for="txtCorreo">Correo Electronico:</label>
-            <input name="Correo" id="txtCorreo" type="email" placeholder="Ejemplo@correo.com"> <br>
+            <input required name="Correo" id="txtCorreo" type="email" placeholder="Ejemplo@correo.com"> <br>
             <label for="txtTelefono">Número de teléfono:</label>
-            <input name="telefono" id="txtTelefono" type="text" placeholder="(+504) 9999-9999"> <br>
+            <input required name="telefono" id="txtTelefono" type="text" placeholder="(+504) 9999-9999"> <br>
             <label for="txtDirección">Dirección Actual:</label>
-            <input name="Dirección" id="txtDirección" type="text" placeholder="Escriba su dirección"> <br>    
+            <input required name="Dirección" id="txtDirección" type="text" placeholder="Escriba su dirección"> <br>    
             <label for="txtCiudad">Cuidad:</label>
-            <input name="Ciudad" id="txtCiudad" type="text" placeholder="Cuidad donde recide"> <br>
+            <input required name="Ciudad" id="txtCiudad" type="text" placeholder="Cuidad donde recide"> <br>
             <label for="cmbEstado">Estado:</label>
-                <select name="Estado" id="cmbEstado">
+                <select required name="Estado" id="cmbEstado">
                     <option value="1">Atlántida</option>
                     <option value="2">Choluteca</option>
                     <option value="3">Colón</option>
@@ -46,7 +46,7 @@
                     <option value="18">Valle</option>
                 </select> <br>
                 <label for="txtCodigoPostal">Código Postal</label>
-                <input name="Codigo" id="txtCodigoPostal" type="text" placeholder="Escriba código postal">
+                <input required name="Codigo" id="txtCodigoPostal" type="text" placeholder="Escriba código postal">
                 <fieldset>
                     <legend>Nivel de educación actual:</legend>
                         <label for="txtPreparatoria">Preparatoria</label>
@@ -72,9 +72,9 @@
                         <input type="text" placeholder="Escriba la carrera" name="Otro">
                 </fieldset> <br>
             <label for="txtMonto">Monto de préstamo solicitado:</label>
-            <input type="text" name="Monto" id="txtMonto" placeholder="Ejemplo: L500.00"> <br> 
+            <input required type="text" name="Monto" id="txtMonto" placeholder="Ejemplo: L500.00"> <br> 
             <label for="txtRazon">Razón para solicitar el préstamo:</label> <br>
-            <textarea name="Razon" id="txtRazon" placeholder="Escriba la razón para la cual solicita el préstamo" cols="80" rows="8" ></textarea>
+            <textarea required name="Razon" id="txtRazon" placeholder="Escriba la razón para la cual solicita el préstamo" cols="80" rows="8" ></textarea>
             <br>
             <button name="BtnEnviar" type="submit">Enviar Formulario</button>
         </form>
