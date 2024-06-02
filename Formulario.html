@@ -9,23 +9,75 @@
 
 <body>
     <header>
-        <h1>Solicitar Prestamo Estudiantil</h1>
+        <h1>Solicitar Préstamo Estudiantil</h1>
+    </header>
+    <main>
         <form action="Formulario.html" method="get">
             <h2>Información Estudiante</h2>
             <label for="txtNombre">Nombre:</label>
             <input required id="txtNombre" type="text" placeholder="Nombre completo"> <br>
             <label for="txtCorreo">Correo Electronico:</label>
             <input name="Correo" id="txtCorreo" type="email" placeholder="Ejemplo@correo.com"> <br>
-            <label for="txtTelefono">Numero de teléfono:</label>
-            <input name="telefono" id="txtTelefono" type="number" placeholder="(+504) 9999-9999">
+            <label for="txtTelefono">Número de teléfono:</label>
+            <input name="telefono" id="txtTelefono" type="text" placeholder="(+504) 9999-9999"> <br>
             <label for="txtDirección">Dirección Actual:</label>
-
+            <input name="Dirección" id="txtDirección" type="text" placeholder="Escriba su dirección"> <br>    
+            <label for="txtCiudad">Cuidad:</label>
+            <input name="Ciudad" id="txtCiudad" type="text" placeholder="Cuidad donde recide"> <br>
+            <label for="cmbEstado">Estado:</label>
+                <select name="Estado" id="cmbEstado">
+                    <option value="1">Atlántida</option>
+                    <option value="2">Choluteca</option>
+                    <option value="3">Colón</option>
+                    <option value="4">Comayagua</option>
+                    <option value="5">Copán</option>
+                    <option value="6">Cortés</option>
+                    <option value="7">El paraíso</option>
+                    <option value="8">Francisco Morazán</option>
+                    <option value="9">Gracias a Dios</option>
+                    <option value="10">Yoro</option>
+                    <option value="11">Intibucá</option>
+                    <option value="12">Islas de la bahía</option>
+                    <option value="13">La paz</option>
+                    <option value="14">Lempira</option>
+                    <option value="15">Ocotepeque</option>
+                    <option value="16">Olancho</option>
+                    <option value="17">Santa Bárbara</option>
+                    <option value="18">Valle</option>
+                </select> <br>
+                <label for="txtCodigoPostal">Código Postal</label>
+                <input name="Codigo" id="txtCodigoPostal" type="text" placeholder="Escriba código postal">
+                <fieldset>
+                    <legend>Nivel de educación actual:</legend>
+                        <label for="txtPreparatoria">Preparatoria</label>
+                        <input type="checkbox" value="1" name="Nivel_Preparatoria"> <br>
+                        <label for="txtLicenciatura">Licenciatura</label>
+                        <input type="checkbox" value="1" name="Nivel_licenciatura"> <br>
+                        <label for="txtMaestria">Maestría</label>
+                        <input type="checkbox" value="1" name="Nivel_Maestría"> <br>
+                        <label for="txtDoctorado">Doctorado</label>
+                        <input type="checkbox" value="1" name="Nivel_Doctorado">
+                </fieldset> <br>
+                <fieldset>
+                    <legend>Programa de estudio:</legend>
+                        <label for="txtICC">Ciencias de la computación</label>
+                        <input type="checkbox" value="1" name="ICC"> <br>
+                        <label for="txtIng">Ingeniería</label>
+                        <input type="checkbox" value="1" name="Ingenieria"> <br>
+                        <label for="txtEconomia">Economía</label>
+                        <input type="checkbox" value="1" name="Economía"> <br>
+                        <label for="txtArtes">Artes</label>
+                        <input type="checkbox" value="1" name="Artes"> <br>
+                        <label for="txtOtros">Otro:</label>
+                        <input type="text" placeholder="Escriba la carrera" name="Otro">
+                </fieldset> <br>
+            <label for="txtMonto">Monto de préstamo solicitado:</label>
+            <input type="text" name="Monto" id="txtMonto" placeholder="Ejemplo: L500.00"> <br> 
+            <label for="txtRazon">Razón para solicitar el préstamo:</label> <br>
+            <textarea name="Razon" id="txtRazon" placeholder="Escriba la razón para la cual solicita el préstamo" cols="80" rows="8" ></textarea>
             <br>
             <button name="BtnEnviar" type="submit">Enviar Formulario</button>
         </form>
-    </header>
-    <main>
-
     </main>
     <footer>
 
