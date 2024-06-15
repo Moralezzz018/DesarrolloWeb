@@ -63,11 +63,13 @@ h2 {
 .Card{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     margin: 0.5rem;
-    padding: 0.5rem;
+    padding: 0rem;
     border: 1px solid #000000;
-    max-width: ;
+    max-width: 280px;
+    min-width: 280px;
+    min-height: 300px;
+    box-shadow: 3px 3px 5px #000000;
 
 }
 .Card h3{
@@ -93,9 +95,13 @@ h2 {
 }
 
 .Card form button{
+    display: block;
+    width: 100%;
     margin: 0.5rem ;
     background-color: darkolivegreen;
     color:#333; 
     padding: 0.5rem;
+    border: none;
+    cursor: pointer;
 
 }
