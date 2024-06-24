@@ -1,14 +1,15 @@
-*{
+* {
     /**/
     box-sizing: border-box;
+    font-family: 'open sans', Arial, sans-serif;
 }
 
-body{
+body {
     margin: 0px;
     padding: 0px;
 }
 
-header{
+header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -17,11 +18,11 @@ header{
     flex-direction: column;
 }
 
-header h1{
+header h1 {
     margin: 0rem 0.5rem;
 }
 
-header div{
+header div {
     display: flex;
     align-items: center;
 }
@@ -33,22 +34,22 @@ header nav ul {
     padding: 0px;
 }
 
-header nav ul li a{
+header nav ul li a {
     display: inline-block;
     color: #FFF;
     text-decoration: none;
     padding: 0.5rem 1rem;
 }
 
-header div img{
+header div img {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     margin: 0.3rem;
 }
 
-header nav ul li a:hover{
-    background-color:rgb(191,183,172);
+header nav ul li a:hover {
+    background-color: rgb(191, 183, 172);
     animation: background-color 5ms ease;
     transition: 1.5s;
 }
@@ -68,7 +69,8 @@ header nav ul li a:hover{
     position: relative;
     background-color: #999;
     height: 90vh;
-    overflow: hidden; /*El contenido se recorta y no se muestra al desplazar*/
+    overflow: hidden;
+    /*El contenido se recorta y no se muestra al desplazar*/
 }
 
 .hero img {
@@ -83,37 +85,46 @@ header nav ul li a:hover{
     object-fit: cover;
 }
 
-.hero .hero-content{
+.hero .hero-content {
     position: absolute;
     width: 300px;
     top: calc(50% - 150px);
     left: calc(50% - 150px);
     color: 000;
+    background-color: rgba(255, 255, 255, 0.397);
 }
 
-.hero .hero-content h2{
+.hero .hero-content h2 {
     font-size: 2.5rem;
     text-decoration: none;
     margin: 0;
     padding: 0;
 }
 
-.container{
+.hero .hero-content form button {
+    width: 100%;
+    background-color: #99999985;
+    border: none;
+    padding: 0.2rem;
+    cursor: pointer;
+}
+
+.container {
     /*padding: 0.5rem;*/
 }
 
-.container h2{
-    background-color: rgb(191,183,172);
+.container h2 {
+    background-color: rgb(191, 183, 172);
 }
 
-.precios{
+.precios {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     padding: 0.5rem;
 }
 
-.card{
+.card {
     display: flex;
     flex-direction: column;
     margin: 1.5rem;
@@ -126,19 +137,19 @@ header nav ul li a:hover{
     transition: transform 500ms;
 }
 
-.card h3{
+.card h3 {
     text-decoration: none;
     margin: 0;
     padding: 0.5rem;
     background-color: #999;
 }
 
-.card p{
+.card p {
     padding: 0;
     margin: 0;
 }
 
-.card span{
+.card span {
     display: block;
     text-align: center;
     padding: 0.5rem;
@@ -146,7 +157,7 @@ header nav ul li a:hover{
     font-weight: bold;
 }
 
-.card form button{
+.card form button {
     width: 100%;
     background-color: #999;
     border: none;
@@ -154,12 +165,45 @@ header nav ul li a:hover{
     cursor: pointer;
 }
 
-.precios .card:hover{
+.precios .card:hover {
     transform: scale(115%);
     z-index: 0 1000;
 }
 
-/*@media (min-width:760px) {
+footer {
+    background-color: rgb(73, 91, 113);
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+footer span {
+    text-align: center;
+    font-weight: bold;
+}
+
+footer nav ul,
+footer .footer-redes ul {
+    display: flex;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    flex-direction: column;
+    text-align: center;
+}
+
+footer nav ul li a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: #FFF;
+    font-size: 0.8rem;
+}
+
+@media (min-width:760px) {
     footer {
         flex-direction: row;
         flex-wrap: wrap;
@@ -195,7 +239,6 @@ header nav ul li a:hover{
         flex: 1 0 20%;
         align-self: flex-start;
     }
-}*/
-
+}
 
 
