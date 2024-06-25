@@ -39,6 +39,7 @@ header nav ul li a {
     color: #FFF;
     text-decoration: none;
     padding: 0.5rem 1rem;
+    animation: background-color 0.5s ease;
 }
 
 header div img {
@@ -50,8 +51,6 @@ header div img {
 
 header nav ul li a:hover {
     background-color: rgb(191, 183, 172);
-    animation: background-color 5ms ease;
-    transition: 1.5s;
 }
 
 @media (min-width:480px) {
