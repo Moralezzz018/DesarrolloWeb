@@ -1,0 +1,247 @@
+*{
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*padding: 1rem 2rem;*/
+    background-color:white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header .branding {
+    display: flex;
+    align-items: center;
+}
+
+header .branding img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0.3rem;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+header nav ul li {
+    margin-left: 2rem;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero img{
+    width: 100%;
+
+}
+
+.hero h2 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.hero a{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 15px;
+    color: black;
+    border: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+.gallery {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+    padding: 2rem; 
+}
+
+.gallery-item img {
+    width: 100%; 
+    height: auto; 
+}
+
+.gallery-item {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+    align-items: center; 
+    margin: 1rem;
+    border: 1px solid #ccc; 
+    padding: 1rem; 
+    background-color: white;
+}
+
+.gallery-item h3 {
+    margin: 0; 
+    flex-grow: 1; 
+    text-align: left;
+}
+
+/* Estilos para los precios en la galería */
+.price {
+    display: inline-block; /* Comportarse como un bloque en línea */
+    background-color: black; 
+    color: white; 
+    padding: 0.5rem; 
+    border-radius: 50%; 
+}
+
+.location {
+    display: flex;
+    padding: 2rem;
+    background-color: #b3ecff;
+}
+
+.location .left {
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    padding: 2rem;
+}
+
+.location .right {
+    flex: 1;
+}
+
+.location .right picture,
+.location .right img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.location h2 {
+    margin-top: 0;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact label {
+    margin-top: 1rem;
+}
+
+.contact input,
+.contact textarea {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.contact input[type="submit"] {
+    background-color:rgb(214, 214, 214);
+    color: white;
+    border: 1px solid black;
+    padding: 0.75rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.contact input[type="submit"]:hover {
+    background-color: darkgray;
+}
+
+.contact label{
+    font-weight: bold;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: black;
+    color: white;
+}
+
+footer nav ul {
+    display: flex;
+    list-style: none;
+}
+
+footer nav ul li {
+    margin-left: 2rem;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+footer .phones a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 1024px) {
+    .gallery-item {
+        width: calc(50% - 2rem);
+    }
+    
+    .location {
+        flex-direction: column;
+    }
+    
+    .location .left,
+    .location .right {
+        flex: none;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    header nav ul {
+        display: flex;
+    }
+    
+    .gallery-item {
+        width: calc(100% - 2rem);
+    }
+    
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero a {
+        padding: 0.5rem 1rem;
+    }
+}
