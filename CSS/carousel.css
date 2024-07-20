@@ -1,0 +1,21 @@
+.carousel{
+    position: relative;
+    height: 85vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.carousel-trak{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    top: 0;
+    left: 0;
+    flex: 1;
+    height: 85vh;
+    transition: transform 1s ease-in-out;
+}
+
+.carousel-arrow{
+
+}
