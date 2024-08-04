@@ -1,0 +1,25 @@
+.carousel {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+  }
+  
+  .carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .hero {
+    display: flex;
+  }
+  
+  .hero picture {
+    min-width: 100%;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .carousel-track img {
+    width: 100%;
+    display: block;
+  }
+  

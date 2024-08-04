@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+.bloque {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.bloque h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.asignatura {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    min-width: 150px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.asignatura:hover {
+    transform: translateY(-5px);
+}
+
+.asignatura h2 {
+    margin: 0 0 10px;
+}
+
+.asignatura p {
+    margin: 0;
+    color: #555;
+}
+
+/* Resaltado para las asignaturas que pueden ser abiertas */
+.highlight-green {
+    background-color: #a4d4a5; /* Verde claro */
+}
+
+/* Resaltado para las asignaturas que requieren la actual */
+.highlight-red {
+    background-color: #f2a5a5; /* Rojo claro */
+}
+
+@media (max-width: 800px) {
+    .asignatura {
+        min-width: 100px;
+    }
+}
